@@ -1,0 +1,127 @@
+.Sidebar {
+  width: auto;
+  height: auto;
+  border-radius: 12.5px;
+  box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.25);
+  max-width: 300px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.Sidebar__logo {
+  width: 100%;
+  height: 40px;
+  padding: 20px;
+}
+
+.Sidebar__logo img {
+  width: inherit;
+  height: inherit;
+}
+
+.Sidebar__nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: 55px 20px;
+}
+.Sidebar__nav-item {
+  transition: 0.3s ease-in;
+}
+
+.Sidebar__nav-item.on {
+  border-left: 2px solid rgba(233, 83, 83);
+}
+
+.Sidebar__nav-item.on * {
+  color: rgba(233, 83, 83);
+}
+
+.Sidebar__nav-item:hover {
+  transform: scale(1.2, 1.2);
+  transition: 0.3s ease-in;
+}
+
+.Sidebar__nav-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin: 2.5px;
+  color: #333;
+  font-size: 1rem;
+  padding: 0px 20px;
+}
+
+.Sidebar__nav-link i {
+  margin-right: 10px;
+}
+
+.Sidebar__course {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.Sidebar__course-image {
+  width: 25%;
+  display: inherit;
+  justify-items: center;
+  align-items: center;
+  padding: 20px 0px 20px 20px;
+  background-color: rgba(233, 83, 83);
+  border-radius: 20px;
+  margin: 0 10px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.Sidebar__course-image:hover {
+  transform: scale(1.2, 1.2);
+  transition: 0.3s ease-in-out;
+}
+
+.Sidebar__course-image i {
+  width: inherit;
+  height: inherit;
+  color: white;
+}
+
+.Sidebar__course-info {
+  width: 75%;
+}
+
+.Sidebar__course-name {
+  font-weight: bold;
+}
+
+.Sidebar__course-author {
+  color: #444;
+}
+.Sidebar__user {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  min-height: 150px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.Sidebar__user-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 25px;
+}
+
+.Sidebar__user-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.Sidebar__user-name {
+  font-weight: bold;
+}
